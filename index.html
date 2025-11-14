@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sumber Inspirasi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Sumber Inspirasi</h1>
+
+<div class="container">
+  <div class="left">
+    <h2>Google Mini Search</h2>
+    <form action="https://www.google.com/search" method="GET" target="_blank">
+      <input type="text" name="q" placeholder="Cari di Google...">
+      <button type="submit">Cari</button>
+    </form>
+
+    <h2>AI Mini (dummy)</h2>
+    <textarea id="aiInput" placeholder="Tulis pesan..."></textarea>
+    <button onclick="aiReply()">Kirim</button>
+    <div id="aiOutput"></div>
+  </div>
+
+  <div class="right">
+    <h2>YouTube Mini Random</h2>
+    <iframe id="ytFrame" width="300" height="170" src="" allowfullscreen></iframe>
+    <button onclick="randomVideo()">Video Random</button>
+
+    <h2>Pencarian YouTube</h2>
+    <input id="ytSearchInput" placeholder="Cari YouTube...">
+    <button onclick="searchYT()">Cari</button>
+
+    <h2>Instagram / TikTok (embed)</h2>
+    <div class="sns-box">Masukkan embed TikTok/IG di sini</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
